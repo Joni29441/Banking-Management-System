@@ -12,11 +12,31 @@ Bank_email varchar(25),
 primary key (Bank_id) 
 );
 
+Create table Employees(
+Employee_id varchar(10),
+Employee_name varchar(25),
+Employee_surname varchar(25),
+primary key (Employee_id)
+
+);
+
+Create table Employee(
+E_id varchar(10),
+primary key(E_id)
+);
+
+Create table Manager(
+Manager_id varchar(10),
+primary key(Manager_id)
+);
+
 Create table Branch(
 Branch_id varchar(5),
 Branch_name varchar(20),
 Branch_address varchar(50),
-primary key (Branch_id,Branch_name)
+Employee_id varchar(10),
+primary key (Branch_id,Branch_name),
+foreign key (Employee_id) references Employees
 );
 
 Create table Customer(
@@ -80,3 +100,8 @@ foreign key (Branch_id) references Bank,
 foreign key (Customer_id) references Customer,
 foreign key (Bank_id)references Bank
 );
+
+--Adding is a hierarchy
+Alter table Manager add constraint fk_manager foreign key (Manager_id) references Employees
+--Adding is a hierarchy
+Alter table Employee add constraint fk_employee foreign key (E_id) references Employees
