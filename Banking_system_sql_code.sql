@@ -1,107 +1,93 @@
-Create database Banking_system
-go 
+CREATE DATABASE BANKING_SYSTEM GO USE BANKING_SYSTEM GO CREATE TABLE BANK( BANK_ID VARCHAR(5), BANK_NAME VARCHAR(15), BANK_ADDRESS VARCHAR(50), BANK_EMAIL VARCHAR(25), PRIMARY KEY (BANK_ID) );
 
-use Banking_system
-go
-
-Create table Bank(
-Bank_id varchar(5),
-Bank_name varchar(15),
-Bank_address varchar(50),
-Bank_email varchar(25),
-primary key (Bank_id) 
+CREATE TABLE EMPLOYEES(
+    EMPLOYEE_ID VARCHAR(10),
+    EMPLOYEE_NAME VARCHAR(25),
+    EMPLOYEE_SURNAME VARCHAR(25),
+    PRIMARY KEY (EMPLOYEE_ID)
 );
 
-Create table Employees(
-Employee_id varchar(10),
-Employee_name varchar(25),
-Employee_surname varchar(25),
-primary key (Employee_id)
-
+CREATE TABLE EMPLOYEE(
+    E_ID VARCHAR(10),
+    PRIMARY KEY(E_ID)
 );
 
-Create table Employee(
-E_id varchar(10),
-primary key(E_id)
+CREATE TABLE MANAGER(
+    MANAGER_ID VARCHAR(10),
+    PRIMARY KEY(MANAGER_ID)
 );
 
-Create table Manager(
-Manager_id varchar(10),
-primary key(Manager_id)
+CREATE TABLE BRANCH(
+    BRANCH_ID VARCHAR(5),
+    BRANCH_NAME VARCHAR(20),
+    BRANCH_ADDRESS VARCHAR(50),
+    EMPLOYEE_ID VARCHAR(10),
+    PRIMARY KEY (BRANCH_ID, BRANCH_NAME),
+    FOREIGN KEY (EMPLOYEE_ID) REFERENCES EMPLOYEES
 );
 
-Create table Branch(
-Branch_id varchar(5),
-Branch_name varchar(20),
-Branch_address varchar(50),
-Employee_id varchar(10),
-primary key (Branch_id,Branch_name),
-foreign key (Employee_id) references Employees
+CREATE TABLE CUSTOMER(
+    CUSTOMER_ID VARCHAR(10),
+    CUSTOMER_NAME VARCHAR(10),
+    CUSTOMER_SURNAME VARCHAR(10),
+    CUSTOMER_CITY VARCHAR(10),
+    CUSTOMER_ADDRESS VARCHAR(50),
+    PRIMARY KEY (CUSTOMER_ID)
 );
 
-Create table Customer(
-Customer_id varchar(10),
-Customer_name varchar(10),
-Customer_surname varchar(10),
-Customer_city varchar(10),
-Customer_address varchar(50),
-primary key (Customer_id) 
+CREATE TABLE LOAN(
+    LOAN_ID VARCHAR(10),
+    AMOUNT NUMERIC(15, 2),
+    BRANCH_NAME VARCHAR(20),
+    BRANCH_ID VARCHAR(5),
+    PRIMARY KEY(LOAN_ID),
+    FOREIGN KEY (BRANCH_ID, BRANCH_NAME) REFERENCES BRANCH
 );
 
-Create table Loan(
-Loan_id varchar(10),
-Amount numeric(15,2),
-Branch_name varchar(20),
-Branch_id varchar(5),
-primary key(Loan_id),
-foreign key (Branch_id,Branch_name) references Branch
-
+CREATE TABLE CREDIT_CARD(
+    CREDIT_CARD_ID VARCHAR(16),
+    EXPIRE_DATE DATE,
+    LIMIT NUMERIC(10, 2),
+    CCV NUMERIC(3),
+    PRIMARY KEY (CREDIT_CARD_ID)
 );
 
-Create table Credit_Card(
-Credit_card_id varchar(16),
-Expire_date date,
-Limit numeric(10,2),
-CCV numeric(3),
-primary key (Credit_card_id)
+CREATE TABLE ACCOUNT(
+    ACCOUNT_ID VARCHAR(16),
+    BALANCE NUMERIC(15),
+    CATEGORY VARCHAR(15),
+    CCV NUMERIC(3),
+    EXPIRE_DATE DATE,
+    PRIMARY KEY (ACCOUNT_ID)
 );
 
-Create table Account(
-Account_id varchar(16),
-Balance numeric(15),
-Category varchar(15),
-CCV numeric(3),
-Expire_date date,
-primary key (Account_id)
-
+CREATE TABLE BORROWER(
+    CUSTOMER_ID VARCHAR(10),
+    LOAN_ID VARCHAR(10),
+    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER,
+    FOREIGN KEY (LOAN_ID) REFERENCES LOAN
 );
 
-Create table Borrower(
-Customer varchar(10),
-Loan_id varchar(10),
-foreign key (Customer) references Customer,
-foreign key (Loan_id) references Loan
+CREATE TABLE CUSTOMER_CREDIT_CARD(
+    CUSTOMER_ID VARCHAR(10),
+    CREDIT_CARD_ID VARCHAR(16),
+    ACCOUNT_ID VARCHAR(16),
+    PRIMARY KEY (CUSTOMER_ID),
+    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER,
+    FOREIGN KEY (CREDIT_CARD_ID) REFERENCES CREDIT_CARD,
+    FOREIGN KEY (ACCOUNT_ID) REFERENCES ACCOUNT
 );
 
-Create table Customer_credit_card(
-Customer varchar(10),
-Credit_card_id varchar(16),
-Account_id varchar(16),
-foreign key (Customer) references Customer,
-foreign key (Credit_card_id) references Credit_Card,
-foreign key (Account_id) references Account
-);
-
-Create table Banker(
-Branch_id varchar(5),
-Customer_id varchar(10),
-Bank_id varchar(5),
-foreign key (Branch_id) references Bank,
-foreign key (Customer_id) references Customer,
-foreign key (Bank_id)references Bank
+CREATE TABLE BANKER(
+    BRANCH_ID VARCHAR(5),
+    CUSTOMER_ID VARCHAR(10),
+    BANK_ID VARCHAR(5),
+    FOREIGN KEY (BRANCH_ID) REFERENCES BANK,
+    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER,
+    FOREIGN KEY (BANK_ID)REFERENCES BANK
 );
 
 --Adding is a hierarchy
-Alter table Manager add constraint fk_manager foreign key (Manager_id) references Employees
---Adding is a hierarchy
-Alter table Employee add constraint fk_employee foreign key (E_id) references Employees
+ALTER TABLE MANAGER ADD CONSTRAINT FK_MANAGER FOREIGN KEY (MANAGER_ID) REFERENCES EMPLOYEES
+ --Adding is a hierarchy
+ALTER TABLE EMPLOYEE ADD CONSTRAINT FK_EMPLOYEE FOREIGN KEY (E_ID) REFERENCES EMPLOYEES
