@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="American_Express.ForgotPass">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="Forgot Password" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold" TextColor="White"/>
+            <StackLayout Margin="60,10,60,0">
+                <Label Margin="70" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Text="Email Address" TextColor="White"/>
+                <Entry  Margin="-25" Placeholder="Email" BackgroundColor="#202020" PlaceholderColor="White" TextColor="White" />
+                <Button Margin="20" Text="Send" BackgroundColor="Black" TextColor="White" Clicked="SendEmailButton" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
