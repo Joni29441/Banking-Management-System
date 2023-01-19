@@ -8,12 +8,12 @@
         Title="Selection" Width="1000" Height="600"
         Background="LightBlue">
     <Grid Width="1000" Height="600">
-        <Button Content="BALANCE" HorizontalAlignment="Right" Background="AliceBlue" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="WITHDRAWAL" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="PIN CHANGE" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,180,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="TRANSFER" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
+        <Button x:Name="Balance" Content="BALANCE" HorizontalAlignment="Right" Background="AliceBlue" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Balance_Click"/>
+        <Button x:Name="Withdraw" Content="WITHDRAWAL" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Withdraw_Click"/>
+        <Button x:Name="PinCh" Content="PIN CHANGE" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,180,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="PinCh_Click"/>
+        <Button x:Name="Transfer" Content="TRANSFER" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Transfer_Click"/>
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,176,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
+        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,176,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
 
     </Grid>
 </Window>

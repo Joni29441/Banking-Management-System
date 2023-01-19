@@ -40,6 +40,46 @@ namespace Bank {
     /// </summary>
     public partial class Selection : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 11 "..\..\Selection.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Balance;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 12 "..\..\Selection.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Withdraw;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 13 "..\..\Selection.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button PinCh;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 14 "..\..\Selection.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Transfer;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 16 "..\..\Selection.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Exit;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +108,42 @@ namespace Bank {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.Balance = ((System.Windows.Controls.Button)(target));
+            
+            #line 11 "..\..\Selection.xaml"
+            this.Balance.Click += new System.Windows.RoutedEventHandler(this.Balance_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
+            this.Withdraw = ((System.Windows.Controls.Button)(target));
+            
+            #line 12 "..\..\Selection.xaml"
+            this.Withdraw.Click += new System.Windows.RoutedEventHandler(this.Withdraw_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 3:
+            this.PinCh = ((System.Windows.Controls.Button)(target));
+            return;
+            case 4:
+            this.Transfer = ((System.Windows.Controls.Button)(target));
+            return;
+            case 5:
+            this.Exit = ((System.Windows.Controls.Button)(target));
+            
+            #line 16 "..\..\Selection.xaml"
+            this.Exit.Click += new System.Windows.RoutedEventHandler(this.Exit_Click);
+            
+            #line default
+            #line hidden
+            return;
+            }
             this._contentLoaded = true;
         }
     }
