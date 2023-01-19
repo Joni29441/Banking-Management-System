@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bank.PIN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="PIN" Width="1000" Height="600"
+        Background="LightBlue">
+    <Grid Width="1000" Height="600">
+        <TextBox HorizontalAlignment="Center" Margin="0,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="26" FontSize="22"/>
+        <Label Content="OLD PIN" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="92" Height="37" FontSize="22"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="218" Height="27" FontSize="22"/>
+        <Label Content="PIN" HorizontalAlignment="Center" VerticalAlignment="Center" Width="44" Height="40" FontSize="22"/>
+        <Button Content="ENTER" HorizontalAlignment="Right" Background="AliceBlue" Margin="619,337,0,0" VerticalAlignment="Top" Width="180" Height="51"/>
+        <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
+        <Label Content="PIN CHANGE" Margin="629,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22" Width="175"/>
+        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="620,254,0,0" VerticalAlignment="Top" Height="49" Width="179"/>
+
+    </Grid>
+</Window>
