@@ -42,7 +42,10 @@ Amount FLOAT(8),
 TranType VARCHAR(10),
 AccId int FOREIGN KEY REFERENCES Account(Id)
 )
-
+CREATE TABLE LastL(
+int id identity(1,1)primary key,
+numeric(4) PIN
+)
 INSERT INTO Branch VALUES ('New York', '5th Avenue', 'SBIN007000', '1-888-397-1980')
 INSERT INTO Branch VALUES ('Chicago', '1849 W Madison St', 'SBIN000080', '1-888-397-1980')
 INSERT INTO Branch VALUES ('Log Angeles', '801 S Grand Ave 510', 'SBIN000069', '1-888-397-1980')
