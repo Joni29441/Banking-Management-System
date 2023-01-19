@@ -11,10 +11,9 @@
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
         <Label Content="BALANCE" Margin="629,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22" Width="175"/>
         <Label Content="AMOUT" HorizontalAlignment="Left" Margin="79,79,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
-        <TextBox HorizontalAlignment="Left" Margin="82,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
-        <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="PRINT" HorizontalAlignment="Right" Background="AliceBlue" Margin="521,109,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="82,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24" />
+        <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
+        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
 
     </Grid>
 </Window>

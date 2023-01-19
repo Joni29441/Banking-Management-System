@@ -50,9 +50,19 @@ namespace Bank
                 command.Parameters.AddWithValue("@password", pin);
 
                 int result = (int)command.ExecuteScalar();
+                connection.Close();
                 if (result > 0)
-                {
-                   System.Windows.MessageBox.Show("Weclome");
+                {int p= int.Parse(pin);
+                    using (SqlConnection con = new SqlConnection(connectionString))
+                    {
+                        con.Open();
+                        string Q = "insert into Lastl(PIN) values (@pin)";
+                        SqlCommand com = new SqlCommand(Q, con);
+                        com.Parameters.AddWithValue("@pin", p);
+                        com.ExecuteNonQuery();
+                        con.Close();
+                    }
+                    System.Windows.MessageBox.Show("Weclome");
                     var loged = new Selection();
                     loged.Show();
                     this.Close();
@@ -61,6 +71,7 @@ namespace Bank
                 {
                     System.Windows.MessageBox.Show("Incorect PIN");
                 }
+                
             }
         }
     }
