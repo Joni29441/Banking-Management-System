@@ -98,3 +98,5 @@ C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Deb
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Bank.csproj.CopyComplete
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Bank.exe
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Bank.pdb
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Other.g.cs
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Other.baml

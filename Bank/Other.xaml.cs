@@ -17,15 +17,32 @@ using System.Windows.Shapes;
 namespace Bank
 {
     /// <summary>
-    /// Interaction logic for Balance.xaml
+    /// Interaction logic for Other.xaml
     /// </summary>
-    public partial class Balance : Window
+    public partial class Other : Window
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["BankSystemEntities"].ConnectionString;
-        public Balance()
+        public Other()
         {
             InitializeComponent();
+        }
+        string connectionString = ConfigurationManager.ConnectionStrings["BankSystemEntities"].ConnectionString;
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            var newForm = new Main();
+            newForm.Show();
+            this.Close();
+            System.Windows.MessageBox.Show("The card has been ejected");
+        }
 
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            var newForm = new Selection();
+            newForm.Show();
+            this.Close();
+        }
+
+        private void Enter_Click(object sender, RoutedEventArgs e)
+        {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -41,26 +58,26 @@ namespace Bank
                     SqlCommand comm = new SqlCommand(query1, connection);
                     comm.Parameters.AddWithValue("@p", id);
                     float Bal = (float)comm.ExecuteScalar();
-                    string B = Bal.ToString();
-                    Amount.Text = B;
+                    String A = Amount.Text;
+                    int a=int.Parse(A);
+                    if (Bal < a)
+                    {
+                        MessageBox.Show("The Account dosent have the amount your requested\n");
+                    }
+                    else
+                    {   string B=Bal.ToString();    
+                        int Ba=int.Parse(B);
+                        int NewA = Ba - a;
+                        string query2 = "Update Account set Balance=@p where CustId=@d";
+                        SqlCommand co = new SqlCommand(query2, connection);
+                        co.Parameters.AddWithValue("@p", NewA);
+                        co.Parameters.AddWithValue("@d", id);
+                        co.ExecuteNonQuery();
+
+                    }
                 }
                 connection.Close();
             }
         }
-        
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            var newForm = new Main();
-            newForm.Show();
-            this.Close();
-            MessageBox.Show("The card has been ejected");
-        }
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            var newForm = new Selection();
-            newForm.Show();
-            this.Close();
-        }
-
     }
 }
