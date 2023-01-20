@@ -8,14 +8,14 @@
         Title="PIN" Width="1000" Height="600"
         Background="LightBlue">
     <Grid Width="1000" Height="600">
-        <TextBox HorizontalAlignment="Center" Margin="0,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="26" FontSize="22"/>
+        <TextBox x:Name="Opin" HorizontalAlignment="Center" Margin="0,154,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="26" FontSize="22"/>
         <Label Content="OLD PIN" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="92" Height="37" FontSize="22"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="218" Height="27" FontSize="22"/>
-        <Label Content="PIN" HorizontalAlignment="Center" VerticalAlignment="Center" Width="44" Height="40" FontSize="22"/>
-        <Button Content="ENTER" HorizontalAlignment="Right" Background="AliceBlue" Margin="619,337,0,0" VerticalAlignment="Top" Width="180" Height="51"/>
+        <TextBox x:Name="Pin" HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="218" Height="27" FontSize="22"/>
+        <Label Content="PIN" HorizontalAlignment="Center" VerticalAlignment="Top" Width="44" Height="40" FontSize="22" Margin="0,202,0,0"/>
+        <Button x:Name="Enter" Content="ENTER" HorizontalAlignment="Right" Background="AliceBlue" Margin="619,337,0,0" VerticalAlignment="Top" Width="180" Height="51" Click="Enter_Click"/>
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
         <Label Content="PIN CHANGE" Margin="629,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22" Width="175"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="620,254,0,0" VerticalAlignment="Top" Height="49" Width="179"/>
+        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="620,254,0,0" VerticalAlignment="Top" Height="49" Width="179" Click="Exit_Click"/>
 
     </Grid>
 </Window>

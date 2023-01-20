@@ -44,6 +44,7 @@ namespace Bank
                     string B = Bal.ToString();
                     Amount.Text = B;
                 }
+                connection.Close();
 
             }
         }
@@ -62,10 +63,5 @@ namespace Bank
             this.Close();
         }
 
-        private void Amount_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-
-        }
     }
 }

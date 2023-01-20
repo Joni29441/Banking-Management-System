@@ -231,16 +231,6 @@
       <DependentUpon>Bank.edmx</DependentUpon>
       <LastGenOutput>Bank.cs</LastGenOutput>
     </Content>
-    <Resource Include="zero.png" />
-    <Resource Include="number-9.png" />
-    <Resource Include="number-8.png" />
-    <Resource Include="seven.png" />
-    <Resource Include="six.png" />
-    <Resource Include="number-5.png" />
-    <Resource Include="number-four.png" />
-    <Resource Include="number-3.png" />
-    <Resource Include="number-2.png" />
-    <Resource Include="number-one.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
