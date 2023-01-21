@@ -228,5 +228,12 @@ namespace Bank
                 connection.Close();
             }
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            var newForm = new Selection();
+            newForm.Show();
+            this.Close();
+        }
     }
 }

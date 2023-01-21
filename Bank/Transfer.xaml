@@ -10,15 +10,13 @@
     <Grid Width="1000" Height="600">
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
         <Label Content="TRANSFER FUNDS" Margin="550,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22"/>
-        <Label Content="AMOUT" HorizontalAlignment="Left" Margin="84,200,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
-        <TextBox HorizontalAlignment="Left" Margin="87,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
+        <Label Content="AMOUNT" HorizontalAlignment="Left" Margin="84,200,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="87,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
         <Label Content="ACCOUNT" HorizontalAlignment="Left" Margin="81,57,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
-        <TextBox HorizontalAlignment="Left" Margin="84,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
-        <Label Content="PIN" HorizontalAlignment="Left" Margin="84,320,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
-        <TextBox HorizontalAlignment="Left" Margin="87,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
-        <Button Content="CONTINUE" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
-        <Button Content="PRINT" HorizontalAlignment="Right" Background="AliceBlue" Margin="521,109,0,0" VerticalAlignment="Top" Height="49" Width="282"/>
+        <TextBox x:Name="Account" HorizontalAlignment="Left" Margin="84,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24"/>
+        <Button x:Name="Countinue" Content="CONTINUE" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,135,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Countinue_Click"/>
+        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,251,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
+        <Button x:Name="Back" Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,355,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
 
     </Grid>
 </Window>

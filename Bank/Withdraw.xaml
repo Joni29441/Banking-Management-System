@@ -16,6 +16,7 @@
         <Button x:Name="A40" Content="4000" HorizontalAlignment="Right" Background="AliceBlue" Margin="517,181,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A40_Click"/>
         <Button x:Name="Other" Content="Other" HorizontalAlignment="Right" Background="AliceBlue" Margin="517,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Other_Click"/>
         <Label Content="WITHDRAWAL" Margin="615,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,404,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
 
     </Grid>
 </Window>

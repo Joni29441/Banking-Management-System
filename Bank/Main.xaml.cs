@@ -30,7 +30,7 @@ namespace Bank
         }
 
         string connectionString = ConfigurationManager.ConnectionStrings["BankSystemEntities"].ConnectionString;
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        public void Exit_Click(object sender, RoutedEventArgs e)
         {
             var newForm = new Main();
             newForm.Show();
@@ -38,7 +38,7 @@ namespace Bank
             System.Windows.MessageBox.Show("The card has been ejected");
         }
 
-        private void Enter_Click(object sender, RoutedEventArgs e)
+        public void Enter_Click(object sender, RoutedEventArgs e)
         {
             string pin = Pin.Text;
             using (SqlConnection connection = new SqlConnection(connectionString))

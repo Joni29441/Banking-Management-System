@@ -36,7 +36,7 @@ namespace Bank
                     SqlCommand com = new SqlCommand(query, connection);
                     string da = data.ToString();
                     com.Parameters.AddWithValue("@pin", da);
-                    var id = (int)com.ExecuteScalar();
+                    int id = (int)com.ExecuteScalar();
                     string query1 = "SELECT Balance As Bal From Account where CustId=@p";
                     SqlCommand comm = new SqlCommand(query1, connection);
                     comm.Parameters.AddWithValue("@p", id);

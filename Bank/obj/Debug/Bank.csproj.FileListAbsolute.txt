@@ -100,3 +100,6 @@ C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Deb
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Bank.pdb
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Other.g.cs
 C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Other.baml
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
