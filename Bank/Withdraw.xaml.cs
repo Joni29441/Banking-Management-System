@@ -105,7 +105,10 @@ namespace Bank
                         co.Parameters.AddWithValue("@p", NewA);
                         co.Parameters.AddWithValue("@d", id);
                         co.ExecuteNonQuery();
-
+                        var newForm = new Main();
+                        newForm.Show();
+                        this.Close();
+                        System.Windows.MessageBox.Show("The card has been ejected");
                     }
                 }
                 connection.Close();
@@ -144,7 +147,10 @@ namespace Bank
                         co.Parameters.AddWithValue("@p", NewA);
                         co.Parameters.AddWithValue("@d", id);
                         co.ExecuteNonQuery();
-
+                        var newForm = new Main();
+                        newForm.Show();
+                        this.Close();
+                        System.Windows.MessageBox.Show("The card has been ejected");
                     }
                 }
                 connection.Close();
@@ -185,6 +191,10 @@ namespace Bank
                         co.ExecuteNonQuery();
 
                     }
+                    var newForm = new Main();
+                    newForm.Show();
+                    this.Close();
+                    System.Windows.MessageBox.Show("The card has been ejected");
                 }
                 connection.Close();
             }
@@ -224,6 +234,10 @@ namespace Bank
                         co.ExecuteNonQuery();
 
                     }
+                    var newForm = new Main();
+                    newForm.Show();
+                    this.Close();
+                    System.Windows.MessageBox.Show("The card has been ejected");
                 }
                 connection.Close();
             }
