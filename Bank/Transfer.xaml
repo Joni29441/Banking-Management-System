@@ -17,6 +17,7 @@
         <Button x:Name="Countinue" Content="CONTINUE" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,135,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Countinue_Click"/>
         <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,251,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
         <Button x:Name="Back" Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,355,-2,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="65,262,0,0" VerticalAlignment="Top" Height="39" Width="23" FontSize="24" FontFamily="Bahnschrift"/>
 
     </Grid>
 </Window>
