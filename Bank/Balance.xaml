@@ -14,6 +14,7 @@
         <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="82,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24" />
         <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
         <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="58,141,0,0" VerticalAlignment="Top" Height="39" Width="23" FontSize="24" FontFamily="Bahnschrift"/>
 
     </Grid>
 </Window>

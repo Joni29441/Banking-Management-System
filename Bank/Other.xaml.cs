@@ -75,6 +75,10 @@ namespace Bank
                         co.ExecuteNonQuery();
 
                     }
+                    var newForm = new Main();
+                    newForm.Show();
+                    this.Close();
+                    System.Windows.MessageBox.Show("The card has been ejected");
                 }
                 connection.Close();
             }

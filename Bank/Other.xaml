@@ -15,6 +15,8 @@
         <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
         <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
         <Button Content="ENTER" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,436,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Enter_Click"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="54,141,0,0" VerticalAlignment="Top" Height="39" Width="23" FontSize="24" FontFamily="Bahnschrift"/>
+
 
     </Grid>
 </Window>
