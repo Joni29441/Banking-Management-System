@@ -7,6 +7,7 @@ go
 CREATE TABLE Customer (
 Id int IDENTITY(1,1) PRIMARY KEY,
 Name VARCHAR(100),
+SSN Varchar(14) NOT NULL,
 DOB DATE,
 Phone VARCHAR(12),
 Email VARCHAR(50),
