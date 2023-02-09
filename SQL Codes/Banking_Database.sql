@@ -7,6 +7,7 @@ go
 CREATE TABLE Customer (
 Id int IDENTITY(1,1) PRIMARY KEY,
 Name VARCHAR(100),
+SSN Varchar(14) NOT NULL,
 DOB DATE,
 Phone VARCHAR(12),
 Email VARCHAR(50),
@@ -43,8 +44,8 @@ TranType VARCHAR(10),
 AccId int FOREIGN KEY REFERENCES Account(Id)
 )
 CREATE TABLE LastL(
-int id identity(1,1)primary key,
-numeric(4) PIN
+id int identity(1,1)primary key,
+PIN numeric(4)
 )
 INSERT INTO Branch VALUES ('New York', '5th Avenue', 'SBIN007000', '1-888-397-1980')
 INSERT INTO Branch VALUES ('Chicago', '1849 W Madison St', 'SBIN000080', '1-888-397-1980')
