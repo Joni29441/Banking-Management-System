@@ -1,0 +1,5 @@
+C:\Users\Jon Fetahi\Desktop\BankSystem - Main - Copy\BankSystem\Banking.UnitTests\obj\Debug\net6.0\Banking.UnitTests.csproj.AssemblyReference.cache
+C:\Users\Jon Fetahi\Desktop\BankSystem - Main - Copy\BankSystem\Banking.UnitTests\obj\Debug\net6.0\Banking.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jon Fetahi\Desktop\BankSystem - Main - Copy\BankSystem\Banking.UnitTests\obj\Debug\net6.0\Banking.UnitTests.AssemblyInfoInputs.cache
+C:\Users\Jon Fetahi\Desktop\BankSystem - Main - Copy\BankSystem\Banking.UnitTests\obj\Debug\net6.0\Banking.UnitTests.AssemblyInfo.cs
+C:\Users\Jon Fetahi\Desktop\BankSystem - Main - Copy\BankSystem\Banking.UnitTests\obj\Debug\net6.0\Banking.UnitTests.csproj.CoreCompileInputs.cache
