@@ -50,9 +50,9 @@ namespace Bank
                 command.Parameters.AddWithValue("@password", pin);
 
                 int result = (int)command.ExecuteScalar();
-                connection.Close();
+               
                 if (result > 0)
-                {int p= int.Parse(pin);
+                {   int p= int.Parse(pin);
                     using (SqlConnection con = new SqlConnection(connectionString))
                     {
                         con.Open();
@@ -66,12 +66,13 @@ namespace Bank
                     var loged = new Selection();
                     loged.Show();
                     this.Close();
+                    
                 }
                 else
                 {
                     System.Windows.MessageBox.Show("Incorect PIN");
                 }
-                
+                connection.Close();
             }
         }
     }
