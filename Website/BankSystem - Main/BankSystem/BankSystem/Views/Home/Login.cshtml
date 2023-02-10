@@ -1,0 +1,105 @@
+﻿@model BankSystem.Models.login
+@{
+    ViewBag.Title = "Login Page";
+}
+
+@{
+    Layout = "~/Views/Shared/_LoginPartial.cshtml";
+}
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .error {
+                margin-top: 15px;
+                font-family: 'poppins', sans-serif;
+                color: #fff;
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/material-design-iconic-font.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/animsition.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="~/Content/util.css">
+        <link rel="stylesheet" type="text/css" href="~/Content/main1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <!--===============================================================================================-->
+    </head>
+    <body style="margin-top:0;">
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('/Photos/NewYork1.jpg');">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form">
+                        <img id="americanExpressLogo" src="~/Photos/AmericanExpressLogo.png">
+                        <span class="login100-form-title p-b-34 p-t-27">
+                            Log in
+                        </span>
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100"
+                                   @Html.TextBoxFor(x => x.username, new { @class = "form-control", autocomplete = "off" })
+                            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100"
+                                   @Html.PasswordFor(x => x.password, new { @class = "form-control", autocomplete = "off" })
+                            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                            @if (ViewBag.Message != null)
+                            {
+                                @ViewBag.Message
+                            }
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-1" style="margin-left:90px;"><input type="submit" value="Log In" class="btn btn-light" /></div>
+                            <div class="col-md-3" style="margin-left:90px;"><a href="@Url.Action("Register", "Home")" class="btn btn-light">Register</a></div>
+                            <div class="error">
+                                @if (ViewBag.attempt != null)
+                                {
+                                    @ViewBag.attempt
+
+                                }
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--===============================================================================================-->
+        <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <!--===============================================================================================-->
+        <script src="~/Scripts/popper.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="~/Scripts/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="~/Scripts/moment.js"></script>
+        <script src="~/Scripts/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/countdowntime/countdowntime.js"></script>
+        <!--===============================================================================================-->
+
+    </body>
+    </html>
+}
