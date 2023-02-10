@@ -6,15 +6,17 @@
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
         Title="Other" Width="1000" Height="600"
-        Background="LightBlue">
+        Background="#FFF"
+                WindowStartupLocation="CenterScreen">
+
     <Grid Width="1000" Height="600">
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
         <Label Content="WITHDRAW" Margin="629,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22" Width="175"/>
         <Label Content="AMOUT" HorizontalAlignment="Left" Margin="79,79,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
         <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="82,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Height="38" FontSize="24" />
-        <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
-        <Button Content="ENTER" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,436,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Enter_Click"/>
+        <Button Content="BACK" Foreground="White" HorizontalAlignment="Right" Background="#FF0088FF" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
+        <Button Content="EXIT" Foreground="White" HorizontalAlignment="Right" Background="#FF0088FF" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
+        <Button Content="ENTER" Foreground="White" HorizontalAlignment="Right" Background="#FF0088FF" Margin="0,436,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Enter_Click"/>
         <Label Content="$" HorizontalAlignment="Left" Margin="54,141,0,0" VerticalAlignment="Top" Height="39" Width="23" FontSize="24" FontFamily="Bahnschrift"/>
 
 

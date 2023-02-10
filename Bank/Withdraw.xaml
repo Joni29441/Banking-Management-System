@@ -6,17 +6,19 @@
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
         Title="Withdraw" Width="1000" Height="600"
-        Background="LightBlue">
+        Background="#FFF"
+                WindowStartupLocation="CenterScreen">
+
     <Grid Width="1000" Height="600">
-        <Button x:Name="A30" Content="3000" HorizontalAlignment="Right" Background="AliceBlue" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A30_Click"/>
-        <Button x:Name="A5" Content="500" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A5_Click"/>
-        <Button x:Name="A10" Content="1000" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,180,0,0"  VerticalAlignment="Top" Height="49" Width="282" Click="A10_Click"/>
-        <Button x:Name="A20" Content="2000" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A20_Click"/>
+        <Button x:Name="A30" Content="3000" Foreground="White" HorizontalAlignment="Right" Background="#FF0088FF" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A30_Click"/>
+        <Button x:Name="A5" Content="500" Foreground="White" HorizontalAlignment="Left" Background="#FF0088FF" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A5_Click"/>
+        <Button x:Name="A10" Content="1000" HorizontalAlignment="Left" Foreground="White" Background="#FF0088FF" Margin="0,180,0,0"  VerticalAlignment="Top" Height="49" Width="282" Click="A10_Click"/>
+        <Button x:Name="A20" Content="2000" HorizontalAlignment="Left" Foreground="White" Background="#FF0088FF" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A20_Click"/>
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
-        <Button x:Name="A40" Content="4000" HorizontalAlignment="Right" Background="AliceBlue" Margin="517,181,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A40_Click"/>
-        <Button x:Name="Other" Content="Other" HorizontalAlignment="Right" Background="AliceBlue" Margin="517,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Other_Click"/>
+        <Button x:Name="A40" Content="4000" HorizontalAlignment="Right" Foreground="White" Background="#FF0088FF" Margin="517,181,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="A40_Click"/>
+        <Button x:Name="Other" Content="Other" HorizontalAlignment="Right" Foreground="White" Background="#FF0088FF" Margin="517,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Other_Click"/>
         <Label Content="WITHDRAWAL" Margin="615,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Right" Background="AliceBlue" Margin="0,404,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Right" Foreground="White" Background="#FF0088FF" Margin="0,404,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
 
     </Grid>
 </Window>

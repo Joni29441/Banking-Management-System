@@ -6,15 +6,23 @@
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
         Title="Balance"  Width="1000" Height="600"
-        Background="LightBlue">
+        Background="#FFF"
+                WindowStartupLocation="CenterScreen">
+
     <Grid Width="1000" Height="600">
+        <Image Source="/Assets/gold-card.png" Height="194" VerticalAlignment="Top" Margin="252,333,250,0"/>
+
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
         <Label Content="BALANCE" Margin="629,7,-4,0" VerticalAlignment="Top" Height="39" FontFamily="Arial Black" FontSize="22" Width="175"/>
-        <Label Content="AMOUT" HorizontalAlignment="Left" Margin="79,79,0,0" VerticalAlignment="Top" Height="39" Width="155" FontSize="24" FontFamily="Bahnschrift"/>
-        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="82,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" FontSize="24" />
-        <Button Content="BACK" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
-        <Button Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
-        <Label Content="$" HorizontalAlignment="Left" Margin="58,141,0,0" VerticalAlignment="Top" Height="39" Width="23" FontSize="24" FontFamily="Bahnschrift"/>
+        <Label Content="AMOUT" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="39" Width="92" FontSize="24" FontFamily="Bahnschrift"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Text="1500000000" Margin="411,228,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="265" Height="57" FontSize="36" BorderBrush="#00000000"   />
+        <Button Content="BACK" Foreground="White" HorizontalAlignment="Right" Background="#FF0088FF" Margin="519,217,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Back_Click"/>
+        <Button Content="EXIT" HorizontalAlignment="Right" Foreground="White" Background="#FF0088FF" Margin="519,333,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
+        <Label Content="$" HorizontalAlignment="Left" Margin="377,233,0,0" VerticalAlignment="Top" Height="47" Width="34" FontSize="36" FontFamily="Bahnschrift">
+            <Label.Background>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Label.Background>
+        </Label>
 
     </Grid>
 </Window>

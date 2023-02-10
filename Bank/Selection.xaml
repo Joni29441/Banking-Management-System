@@ -6,14 +6,16 @@
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
         Title="Selection" Width="1000" Height="600"
-        Background="LightBlue">
+        Background="#FFF"
+                WindowStartupLocation="CenterScreen">
+
     <Grid Width="1000" Height="600">
-        <Button x:Name="Balance" Content="BALANCE" HorizontalAlignment="Right" Background="AliceBlue" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Balance_Click"/>
-        <Button x:Name="Withdraw" Content="WITHDRAWAL" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Withdraw_Click"/>
-        <Button x:Name="PinCh" Content="PIN CHANGE" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,180,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="PinCh_Click"/>
-        <Button x:Name="Transfer" Content="TRANSFER" HorizontalAlignment="Left" Background="AliceBlue" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Transfer_Click"/>
+        <Button x:Name="Balance" Foreground="White" Content="BALANCE" HorizontalAlignment="Right" Background="#FF0088FF" Margin="515,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Balance_Click"/>
+        <Button x:Name="Withdraw" Content="WITHDRAWAL" Foreground="White" HorizontalAlignment="Left" Background="#FF0088FF" Margin="0,65,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Withdraw_Click"/>
+        <Button x:Name="PinCh" Content="PIN CHANGE" HorizontalAlignment="Left" Foreground="White" Background="#FF0088FF" Margin="0,180,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="PinCh_Click"/>
+        <Button x:Name="Transfer" Content="TRANSFER" HorizontalAlignment="Left" Background="#FF0088FF" Foreground="White" Margin="0,280,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Transfer_Click"/>
         <Image Source="/Assets/AE.png" Height="71" VerticalAlignment="Top" Margin="300,2,298,0"/>
-        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="519,176,0,0" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
+        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="#FF0088FF" Margin="519,176,0,0" Foreground="White" VerticalAlignment="Top" Height="49" Width="282" Click="Exit_Click"/>
 
     </Grid>
 </Window>

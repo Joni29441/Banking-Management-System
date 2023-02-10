@@ -27,6 +27,7 @@ namespace Bank
         public Main()
         {
             InitializeComponent();
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
 
         string connectionString = ConfigurationManager.ConnectionStrings["BankSystemEntities"].ConnectionString;

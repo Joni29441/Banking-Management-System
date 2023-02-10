@@ -6,15 +6,14 @@
         xmlns:local="clr-namespace:Bank"
         mc:Ignorable="d"
         Title="Main" Width="1000" Height="600"
-        Background="LightBlue">
-    <Grid Width="1000" Height="600">
-        <Grid Margin="300,10,296,490">
-            <Image Source="/Assets/AE.png" Height="118" VerticalAlignment="Top" Margin="2,-7,-2,0"/>
-        </Grid>
-        <TextBox x:Name="Pin" HorizontalAlignment="Center" Margin="0,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="24"/>
-        <Label Content="PIN" HorizontalAlignment="Left" Margin="482,251,0,0" VerticalAlignment="Top" Height="37" Width="47" FontSize="22"/>
-        <Button x:Name="Enter" Content="ENTER" HorizontalAlignment="Right" Margin="686,357,0,0" Background="AliceBlue" VerticalAlignment="Top" Width="175" Height="51" Click="Enter_Click"/>
-        <Button x:Name="Exit" Content="EXIT" HorizontalAlignment="Right" Background="AliceBlue" Margin="684,256,0,0" VerticalAlignment="Top" Height="49" Width="179" Click="Exit_Click"/>
-
+        Background="#fff"
+        WindowStartupLocation="CenterScreen">
+    <Grid Width="1000" Margin="0,0,0,0">
+        <Image Source="Assets/Am.jpg" Margin="192,0,192,203" Grid.ColumnSpan="2"></Image>
+        <TextBox x:Name="Pin" HorizontalAlignment="Left" Margin="412,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="24" Grid.ColumnSpan="2"/>
+        <Label Content="PIN" HorizontalAlignment="Left" Margin="472,251,0,0" VerticalAlignment="Top" Height="60" Width="68" FontSize="36" Grid.ColumnSpan="2" FontFamily="Yu Gothic UI Semibold"/>
+        <Button x:Name="Enter" Foreground="White" Content="ENTER" HorizontalAlignment="Right" Margin="0,311,0,0" Background="#FF0088FF" VerticalAlignment="Top" Width="175" Height="51" Click="Enter_Click" Grid.Column="1"/>
+        <Button x:Name="Exit" Foreground="White"  Content="EXIT" HorizontalAlignment="Right" Background="#FF0088FF" Margin="0,222,0,0" VerticalAlignment="Top" Height="49" Width="179" Click="Exit_Click" Grid.Column="1"/>
+        <Image Source="Assets/R.png" Margin="20,435,703,20" Stretch="Fill"></Image>
     </Grid>
 </Window>

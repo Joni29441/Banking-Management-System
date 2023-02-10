@@ -121,6 +121,9 @@
     <Compile Include="Branch.cs">
       <DependentUpon>Bank.tt</DependentUpon>
     </Compile>
+    <Compile Include="Card.xaml.cs">
+      <DependentUpon>Card.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs">
       <DependentUpon>Bank.tt</DependentUpon>
     </Compile>
@@ -153,6 +156,10 @@
       <DependentUpon>Withdraw.xaml</DependentUpon>
     </Compile>
     <Page Include="Balance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Card.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -231,6 +238,12 @@
     <Resource Include="Assets\zero.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="card.png" />
+    <Resource Include="Assets\pokahontas.png" />
+    <Resource Include="Assets\Am.jpg" />
+    <Resource Include="Assets\R.png" />
+    <Resource Include="Assets\card.png" />
+    <Resource Include="Assets\gold-card.png" />
     <Content Include="Bank.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Bank.Context.cs</LastGenOutput>
