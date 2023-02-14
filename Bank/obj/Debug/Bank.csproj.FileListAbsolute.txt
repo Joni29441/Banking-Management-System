@@ -160,3 +160,5 @@ C:\Users\Jon Fetahi\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Ba
 C:\Users\Jon Fetahi\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Bank.pdb
 C:\Users\Jon Fetahi\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Card.g.cs
 C:\Users\Jon Fetahi\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Card.baml
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Card.g.cs
+C:\Users\Goni_\Documents\Documents\GitHub\Banking-Management-System\Bank\obj\Debug\Card.baml

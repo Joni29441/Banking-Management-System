@@ -41,7 +41,7 @@ namespace Bank
 
         public void Enter_Click(object sender, RoutedEventArgs e)
         {
-            string pin = Pin.Text;
+            string pin = Pin.Password;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();

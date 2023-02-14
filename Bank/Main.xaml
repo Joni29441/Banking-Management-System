@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen">
     <Grid Width="1000" Margin="0,0,0,0">
         <Image Source="Assets/Am.jpg" Margin="192,0,192,203" Grid.ColumnSpan="2"></Image>
-        <TextBox x:Name="Pin" HorizontalAlignment="Left" Margin="412,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="24" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="Pin"  HorizontalAlignment="Left" Margin="412,311,0,0" VerticalAlignment="Top" Width="186" Height="24" Grid.ColumnSpan="2" PasswordChar="*"/>
         <Label Content="PIN" HorizontalAlignment="Left" Margin="472,251,0,0" VerticalAlignment="Top" Height="60" Width="68" FontSize="36" Grid.ColumnSpan="2" FontFamily="Yu Gothic UI Semibold"/>
         <Button x:Name="Enter" Foreground="White" Content="ENTER" HorizontalAlignment="Right" Margin="0,311,0,0" Background="#FF0088FF" VerticalAlignment="Top" Width="175" Height="51" Click="Enter_Click" Grid.Column="1"/>
         <Button x:Name="Exit" Foreground="White"  Content="EXIT" HorizontalAlignment="Right" Background="#FF0088FF" Margin="0,222,0,0" VerticalAlignment="Top" Height="49" Width="179" Click="Exit_Click" Grid.Column="1"/>
