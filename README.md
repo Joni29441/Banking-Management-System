@@ -2,7 +2,7 @@
 
 This is a Banking Management System - Website and ATM software
 
-Writen in ASP.NET MVC and WPF, and SQL SERVER 
+Writen in ASP.NET MVC, WinForm, and SQL SERVER 
 
 
 Made Possible by: 
