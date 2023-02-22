@@ -175,7 +175,6 @@ namespace BankSystem.Controllers
                     SqlCommand Cmd = new SqlCommand("INSERT_INTO_BANK_TABLES", con);
                     Cmd.CommandType = CommandType.StoredProcedure;
                     Cmd.Parameters.AddWithValue("@name", LogIN.Name);
-                    Cmd.Parameters.AddWithValue("@SSN", LogIN.SSN);
                     Cmd.Parameters.AddWithValue("@dob", LogIN.DOB);
                     Cmd.Parameters.AddWithValue("@phone", LogIN.Phone);
                     Cmd.Parameters.AddWithValue("@email", LogIN.Email);
