@@ -18,7 +18,6 @@ CREATE PROCEDURE [dbo].[INSERT_INTO_BANK_TABLES]
 	-- Add the parameters for the stored procedure here
 	@name	 varchar(100),
 	@dob	 date,
-	@SSN	 varchar(14),
 	@phone	 varchar(12),
 	@email	 varchar(50),
 	@address varchar(200),
@@ -37,9 +36,8 @@ BEGIN
 
     -- Insert statements for procedure here
 
-	INSERT INTO Customer (Name, SSN, DOB, Phone, Email, Address, Username, Password, PIN, Reg_Date) VALUES (
+	INSERT INTO Customer (Name, DOB, Phone, Email, Address, Username, Password, PIN, Reg_Date) VALUES (
 	@name,
-	@SSN,
 	@dob,
 	@phone,
 	@email,
