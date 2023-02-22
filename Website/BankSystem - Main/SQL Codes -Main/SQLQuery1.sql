@@ -54,13 +54,3 @@ INSERT INTO Branch VALUES ('Log Angeles', '801 S Grand Ave 510', 'LA003USA', '1-
 INSERT INTO Branch VALUES ('Washington D.C', '1615 L Street NW 340', 'WA004USA', '1-202-429-0222')
 INSERT INTO Branch VALUES ('Dallas', '801 E Campbell Rd 585', 'DA005USA', '1-214-445-0600')
 INSERT INTO Branch VALUES ('Miami', '1500 NW 136th Ave', 'MIA006USA', '1-954-503-0000')
-
-
-SELECT * FROM Branch
-select * from Account
-select * from Customer
-
-
-UPDATE Account SET Balance = 500000
-
---banksoftwarengineering
