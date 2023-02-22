@@ -14,11 +14,6 @@ namespace BankSystem.Models
 
 
         [Required]
-        [Display(Name = "SSN")]
-        public string SSN { get; set; }
-
-
-        [Required]
         [Display(Name = "Date Of Birth :")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MMM/yyyy}")]
         public DateTime DOB { get; set; }
